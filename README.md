@@ -1,2 +1,3 @@
 # ctf
 Custom time format
+The tick format provided by d3.time.scale is a *multi-scale* tick format, meaning that it formats times differently depending on the time. For example, the start of February is formatted as "February", while February second is formatted as "Feb 2". The format is implemented using an array of time formats, each with an associated filter. The first filter that returns true is used. (In the implementation below, the formats are processed in reverse order.) You can create your own custom multi-scale time format using [d3.time.format.multi](https://github.com/mbostock/d3/wiki/Time-Formatting#wiki-format_multi).
